@@ -15,7 +15,6 @@ completion = client.chat.completions.create(
   max_tokens=1024,
   stream=True
 )
-
 for chunk in completion:
   if chunk.choices[0].delta.content is not None:
     print(chunk.choices[0].delta.content, end="")

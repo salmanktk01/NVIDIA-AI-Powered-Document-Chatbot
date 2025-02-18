@@ -22,7 +22,7 @@ def vector_embedding():
 
     if "vectors" not in st.session_state:
 
-        st.session_state.embeddings=NVIDIAEmbeddings(api_key="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")
+        st.session_state.embeddings=NVIDIAEmbeddings(api_key="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")
         st.session_state.loader=PyPDFDirectoryLoader("./us_census") ## Data Ingestion
         st.session_state.docs=st.session_state.loader.load() ## Document Loading
         st.session_state.text_splitter=RecursiveCharacterTextSplitter(chunk_size=700,chunk_overlap=50) ## Chunk Creation

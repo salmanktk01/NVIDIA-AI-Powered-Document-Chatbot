@@ -13,7 +13,6 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 load_dotenv(dotenv_path="C:\\redener\\MynexRenpro\\Langchain\\.env")
-
 ## load the Groq API key
 # api_key = os.getenv("Nivida_key")
 
